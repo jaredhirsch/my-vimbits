@@ -51,3 +51,7 @@ autocmd FileType py source ~/.vim/filetypes/py.vim
 " expandtab causes makefiles to break, because makefiles need real tabstops.
 " to fix this, trying the following suggestion from vim.org:
 autocmd FileType make setlocal noexpandtab
+
+" github-flavored markdown wraps at line breaks, so enable soft wrap on whole
+" words when editing markdown files, and just keep the window width at 85 chars
+autocmd FileType mkd set wrap linebreak textwidth=0
