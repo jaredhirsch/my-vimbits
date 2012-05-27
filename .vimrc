@@ -3,6 +3,9 @@
 " nocompatible needed for a lot of vim behavior to 'just work'
 set nocompatible
 
+" on some systems, backspace doesn't work by default. this fixes it
+set backspace=2
+
 " some debian distros disable modelines by default for security reasons
 set modeline modelines=5 
 
