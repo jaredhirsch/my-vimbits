@@ -1,4 +1,4 @@
-" simplified vim settings, last updated 7 Feb 2022
+" simplified vim settings, last updated 29 May 2024
 
 set expandtab
 set tabstop=2
@@ -20,3 +20,6 @@ set foldmethod=indent
 
 " syntax highlight firefox .jsm files
 au BufReadPost *.jsm set syntax=javascript
+
+" syntax highlight IDL files, too
+au BufReadPost *.idl set syntax=javascript
